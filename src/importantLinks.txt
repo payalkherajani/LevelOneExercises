@@ -1,0 +1,5 @@
+//Notion Link
+https://www.notion.so/1-React-Practise-5784f36f20ae4945aa207713d5a2fdbe
+
+//Virtual DOM,Reconicilation and Diffing
+https://programmingwithmosh.com/react/react-virtual-dom-explained/#:~:text=When%20the%20state%20of%20a,process%20is%20called%20%E2%80%9Cdiffing%E2%80%9D.&text=This%20ensures%20a%20superior%20developer%20experience%20when%20using%20React.
