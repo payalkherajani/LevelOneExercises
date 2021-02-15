@@ -11,9 +11,7 @@ const CharacterCounter = () => {
         else {
             return
         }
-
     }
-    console.log("Value", val.length)
     return (
         <div className="character-Counter">
             <h3>Character Counter</h3>
