@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 
+// const strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
+
 const AlphaNumericPassword = () => {
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
+    const [showPassword, setShowPassword] = useState(false);
 
     const passwordOnChange = (e) => {
         const { name, value } = e.target;
+
         if (name === 'password') {
             setPassword(value)
         }
@@ -13,17 +17,25 @@ const AlphaNumericPassword = () => {
             setConfirmPassword(value);
         }
     }
-    const checkPasswords = () => {
-        console.log("password")
+    const checkPasswords = (e) => {
+        e.preventDefault();
+        console.log(e.target.password)
+    }
+    const visibilityPassword = () => {
+        setShowPassword(true);
     }
 
     return (
         <div className="AlphaNumericPassword-div">
             <h3>AlphaNumericPassword</h3>
-            <form onSubmit={checkPasswords}>
-                <input type="password" name="password" placeholder="Enter Password" value={password} onChange={passwordOnChange} required >
-                </input>
-                <input type="password" name="confirmPassword" placeholder="Confirm Password" value={confirmPassword} onChange={passwordOnChange} required></input>
+            <form onSubmit={e => checkPasswords(e)}>
+
+                <div>
+                    <button onClick={visibilityPassword}><i className="far fa-eye"></i></button>
+                    <input type={showPassword === true ? "text" : "password"} name="password" placeholder="Enter Password" value={password} onChange={passwordOnChange} required />
+                </div>
+
+                <input type="password" name="confirmPassword" placeholder="Confirm Password" value={confirmPassword} onChange={passwordOnChange} required />
                 {
                     password !== "" && confirmPassword !== "" && password === confirmPassword ? (<button>Submit</button>) : (<button disabled>Submit</button>)
                 }
