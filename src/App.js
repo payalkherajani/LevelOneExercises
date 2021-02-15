@@ -2,6 +2,7 @@ import './App.css';
 import CharacterCounter from './components/CharacterCounter';
 import Counter from './components/Counter';
 import PasswordMatch from './components/PasswordMatch';
+import AlphaNumericPassword from './components/AlphaNumericPassword';
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
       <CharacterCounter />
       <hr />
       <PasswordMatch />
+      <hr />
+      <AlphaNumericPassword />
       <hr />
     </div>
   );
