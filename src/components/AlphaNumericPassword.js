@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 
-// const strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
-
 const AlphaNumericPassword = () => {
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
@@ -20,6 +18,8 @@ const AlphaNumericPassword = () => {
     const checkPasswords = (e) => {
         e.preventDefault();
         console.log(e.target.password)
+        setPassword("");
+        setConfirmPassword("")
     }
     const visibilityPassword = () => {
         setShowPassword(true);
@@ -29,7 +29,6 @@ const AlphaNumericPassword = () => {
         <div className="AlphaNumericPassword-div">
             <h3>AlphaNumericPassword</h3>
             <form onSubmit={e => checkPasswords(e)}>
-
                 <div>
                     <button onClick={visibilityPassword}><i className="far fa-eye"></i></button>
                     <input type={showPassword === true ? "text" : "password"} name="password" placeholder="Enter Password" value={password} onChange={passwordOnChange} required />
