@@ -5,6 +5,7 @@ import PasswordMatch from './components/PasswordMatch';
 import AlphaNumericPassword from './components/AlphaNumericPassword';
 import AddToCart from './components/AddToCart';
 import ToggleColor from './components/ToggleColor';
+import FigmaTool from './components/FigmaTool';
 
 function App() {
   return (
@@ -19,10 +20,13 @@ function App() {
       <hr />
       <AlphaNumericPassword />
       <hr />
+      <FigmaTool />
+      <hr />
       <AddToCart />
       <hr />
       <ToggleColor />
       <hr />
+
     </div>
   );
 }
