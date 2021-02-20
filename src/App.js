@@ -9,6 +9,7 @@ import FigmaTool from './components/minifigma/FigmaTool';
 import Tabs from './components/tabs/Tabs';
 import Toast from './components/toast/Toast';
 import Todo from './components/todo/Todo';
+import LikeList from './components/like/LikeList';
 
 
 function App() {
@@ -36,8 +37,8 @@ function App() {
       <hr />
       <ToggleColor />
       <hr />
-
-
+      <LikeList />
+      <hr />
     </div>
   );
 }
