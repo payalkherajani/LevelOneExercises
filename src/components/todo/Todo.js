@@ -18,9 +18,14 @@ const Todo = () => {
         }
     }
     const listItem = (to) => {
-        to.isCompleted = !to.isCompleted; //Component should render again for reconciliation,value becomes true
+        const updateTodo = todo.map((i) => {
+            if (i.key === to.key) {
+                i.isCompleted = !to.isCompleted
+            }
+            return i;
+        })
+        setTodo(updateTodo);
     }
-    console.log("todo", todo);
     return (
         <div>
             <input name="todo" type="text" placeholder="Add Todo" value={item} onChange={(e) => setItem(e.target.value)} required />
