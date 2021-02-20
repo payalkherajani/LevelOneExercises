@@ -7,6 +7,7 @@ import AddToCart from './components/cart/AddToCart';
 import ToggleColor from './components/togglecolor/ToggleColor';
 import FigmaTool from './components/minifigma/FigmaTool';
 import Tabs from './components/tabs/Tabs';
+import Toast from './components/toast/Toast';
 
 
 function App() {
@@ -27,6 +28,8 @@ function App() {
       <AddToCart />
       <hr />
       <Tabs />
+      <hr />
+      <Toast />
       <hr />
       <ToggleColor />
       <hr />
