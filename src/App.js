@@ -6,6 +6,7 @@ import AlphaNumericPassword from './components/AlphaNumericPassword';
 import AddToCart from './components/AddToCart';
 import ToggleColor from './components/ToggleColor';
 import FigmaTool from './components/FigmaTool';
+import Tabs from './components/tabs/Tabs';
 
 
 function App() {
@@ -25,8 +26,11 @@ function App() {
       <hr />
       <AddToCart />
       <hr />
+      <Tabs />
+      <hr />
       <ToggleColor />
       <hr />
+
 
     </div>
   );

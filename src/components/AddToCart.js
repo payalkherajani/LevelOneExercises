@@ -18,7 +18,7 @@ const AddToCart = () => {
     const additemtocart = (item) => {
         if (item.qty !== 0) {
             item.qty = item.qty - 1;
-            setCart([...cart, { value: item.value, qty: item.qty }]);
+            setCart([...cart, { value: item.value }]);
         }
     }
     return (
@@ -44,7 +44,7 @@ const AddToCart = () => {
                                     })
                                 }
                             </ul>
-                        ) : (<div> </div>)
+                        ) : (" ")
                 }
             </div>
         </div>
