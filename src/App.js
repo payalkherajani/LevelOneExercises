@@ -7,6 +7,7 @@ import AddToCart from './components/AddToCart';
 import ToggleColor from './components/ToggleColor';
 import FigmaTool from './components/FigmaTool';
 
+
 function App() {
   return (
     <div className="App">
