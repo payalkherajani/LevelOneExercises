@@ -8,6 +8,7 @@ import ToggleColor from './components/togglecolor/ToggleColor';
 import FigmaTool from './components/minifigma/FigmaTool';
 import Tabs from './components/tabs/Tabs';
 import Toast from './components/toast/Toast';
+import Todo from './components/todo/Todo';
 
 
 function App() {
@@ -30,6 +31,8 @@ function App() {
       <Tabs />
       <hr />
       <Toast />
+      <hr />
+      <Todo />
       <hr />
       <ToggleColor />
       <hr />
