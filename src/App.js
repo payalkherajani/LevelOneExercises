@@ -11,6 +11,11 @@ import Toast from './components/toast/Toast';
 import Todo from './components/todo/Todo';
 import LikeList from './components/like/LikeList';
 
+//Fp
+import Filter from './functionalprogramming/HighOrderFunc/Filter';
+import Questions from './functionalprogramming/Immutability/Questions';
+import PureQue from './functionalprogramming/purefunctions/PureQue';
+
 
 function App() {
   return (
@@ -39,6 +44,10 @@ function App() {
       <hr />
       <LikeList />
       <hr />
+      <h1>Functional Programming</h1>
+      <Filter />
+      <Questions />
+      <PureQue />
     </div>
   );
 }
