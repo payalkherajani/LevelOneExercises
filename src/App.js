@@ -17,10 +17,15 @@ import Questions from './functionalprogramming/Immutability/Questions';
 import PureQue from './functionalprogramming/purefunctions/PureQue';
 import Homework from './functionalprogramming/Homework/Homework';
 
+//Async
+import LiveQuestions from './Async/Livecoding/LiveQuestions';
+
 
 function App() {
   return (
     <div className="App">
+      <h1>Async Await</h1>
+      <LiveQuestions />
       <h1>Functional Programming</h1>
       <Filter />
       <Questions />
