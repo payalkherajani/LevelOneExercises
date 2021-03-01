@@ -15,11 +15,18 @@ import LikeList from './components/like/LikeList';
 import Filter from './functionalprogramming/HighOrderFunc/Filter';
 import Questions from './functionalprogramming/Immutability/Questions';
 import PureQue from './functionalprogramming/purefunctions/PureQue';
+import Homework from './functionalprogramming/Homework/Homework';
 
 
 function App() {
   return (
     <div className="App">
+      <h1>Functional Programming</h1>
+      <Filter />
+      <Questions />
+      <PureQue />
+      <h4>FP Homework Questions</h4>
+      <Homework />
       <h1>Exercises-React</h1>
       <hr />
       <Counter />
@@ -44,10 +51,6 @@ function App() {
       <hr />
       <LikeList />
       <hr />
-      <h1>Functional Programming</h1>
-      <Filter />
-      <Questions />
-      <PureQue />
     </div>
   );
 }
