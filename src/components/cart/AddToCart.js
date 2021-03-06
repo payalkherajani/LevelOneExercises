@@ -28,7 +28,8 @@ const AddToCart = () => {
                     itemsinmyCart.map((item) =>
                         <div key={item.key} style={{ display: "flex" }}>
                             <li>{item.value}</li>
-                            <button onClick={() => additemtocart(item)} disabled={item.qty === 0 ? true : false}>Add</button>
+                            <button onClick={() => additemtocart(item)} disabled={item.qty === 0 ? true : false}>Add </button>
+                            <span>{item.qty === 0 ? ("Out of Stock") : ("")}</span>
                         </div>)
                 }
             </ul>
